@@ -1,0 +1,126 @@
+# Python Virtual Environment
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Environment variables and secrets
+.env
+.env.local
+.env.*.local
+*.env
+
+# Database files (unless you need to inspect them)
+*.db
+*.sqlite
+*.sqlite3
+
+# Test configurations and mocks
+*.py.test*
+
+# Coverage reports
+htmlcov/
+.tox/
+.nox/
+
+# PyTest cache
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.out
+
+# MyPy (type checking) cache and settings
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Jupyter notebooks
+.ipynb_checkpoints
+
+# VS Code extension installations (node_modules, extensions installed)
+.vscode/*
+!.eslintrc.cjs
+!.eslintignore
+!.prettierrc.cjs
+!.prettierignore
+!.vscode/settings.json
+!.vslsnmp.config.json
+!.settings.json
+!.keybindings.json
+
+# Editorconfig
+editorconfig
+
+# IDE and debugging configs
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+logs/
+*.log
+
+# NPM packages (unless you need to install dependencies for development)
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# Docker files (preserved by user)
+docker-compose.override.yml
+
+# Python 3.10+ PEP 617 build output
+build/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+.env
+.env.*
+!.env.example
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.backup-*
+.venv/
+node_modules/
+dist/
+
+
+# Additional security exclusions
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite3-wal
+*.sqlite3-shm
+*.pem
+*.key
+*.pfx
+*.bak
+*.backup
+.pytest_cache/
+data/
+!**/.env.example
+!**/.dockerignore

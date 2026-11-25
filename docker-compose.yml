@@ -1,0 +1,66 @@
+name: flagguard-ai
+
+services:
+  backend:
+    image: flagguard-backend:local
+    build: ./backend
+    restart: unless-stopped
+    env_file:
+      - ./backend/.env
+    environment:
+      FLAGSMITH_API_URL: http://host.docker.internal:8000/api/v1/
+      OLLAMA_BASE_URL: http://host.docker.internal:11434
+      OLLAMA_MODEL: qwen2.5:1.5b
+      FLAGGUARD_DATA_DIR: /data
+
+    volumes:
+      - ./data:/data
+    ports:
+      - "127.0.0.1:8080:8080"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8080/health')"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+
+  frontend:
+    image: flagguard-frontend:local
+    build: ./frontend
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:5173:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+
+  demostore:
+    image: flagguard-demostore:local
+    build: ./demostore
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:3001:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+
+
+  experiment-sdk:
+    image: flagguard-experiment-sdk:local
+    build: ./experiments
+    restart: unless-stopped
+    env_file:
+      - ./experiments/.env
+    environment:
+      FLAGSMITH_API_URL: http://host.docker.internal:8000/api/v1/
+    ports:
+      - "127.0.0.1:8081:8081"
+    volumes:
+      - ./data:/data
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:8081/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+
+
+

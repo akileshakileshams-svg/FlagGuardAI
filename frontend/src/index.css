@@ -1,0 +1,15 @@
+﻿* { box-sizing: border-box; }
+
+:root {
+  font-family: Inter, Segoe UI, Arial, sans-serif;
+  color: #e2e8f0;
+  background: #080d18;
+  font-synthesis: none;
+}
+
+body { margin: 0; min-width: 320px; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+button:disabled { opacity: .6; cursor: wait; }
+a { color: #a5b4fc; text-decoration: none; }
+h1, h2, p { margin: 0; }
