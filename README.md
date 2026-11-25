@@ -46,6 +46,39 @@ flowchart TD
     Flagsmith --> PostgreSQL[(PostgreSQL)]
 ```
 
+
+## Application Screenshots
+
+### Overview Dashboard
+![Dashboard](docs/screenshots/01-overview.png)
+
+### Feature Flag Management
+![Feature Flags](docs/screenshots/02-feature-flags.png)
+
+### Release Risk Monitoring
+![Monitoring](docs/screenshots/03-monitoring.png)
+
+### Human-Approved Safe Rollback
+![Rollback](docs/screenshots/04-safe-rollback.png)
+
+### Release Timeline Replay
+![Release Replay](docs/screenshots/05-release-replay.png)
+
+### Local AI Analyst
+![AI Analyst](docs/screenshots/06-ai-analyst.png)
+
+### Native A/B Experimentation
+![Experiments](docs/screenshots/07-experiments.png)
+
+### Interactive DemoStore
+![DemoStore](docs/screenshots/08-demostore.png)
+
+### Native Flagsmith Results
+![Flagsmith](docs/screenshots/09-flagsmith.png)
+
+### Automated Smoke Tests
+![Testing](docs/screenshots/10-smoke-tests.png)
+
 ## Technology Stack
 
 | Component | Technology |
@@ -274,5 +307,6 @@ Original FlagGuard AI code is licensed under the MIT License. Third-party compon
 ---
 
 **FlagGuard AI - Experiment intelligently. Release safely.**
+
 
 
