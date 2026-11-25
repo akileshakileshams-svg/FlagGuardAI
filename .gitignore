@@ -124,3 +124,6 @@ dist/
 data/
 !**/.env.example
 !**/.dockerignore
+
+# Local demo video
+docs/demo-video/
