@@ -6,6 +6,13 @@ A self-hosted AI-powered release intelligence and feature flag safety toolkit bu
 
 **Toggle Wars Hackathon - Track 03**
 
+
+## Demo Video
+
+[![Watch FlagGuard AI Demo](https://img.youtube.com/vi/cBjoJ1PRgmk/hqdefault.jpg)](https://youtu.be/cBjoJ1PRgmk)
+
+[Watch the complete FlagGuard AI demonstration on YouTube](https://youtu.be/cBjoJ1PRgmk)
+
 ## Overview
 
 FlagGuard AI helps developers identify risky software releases, analyse feature performance, evaluate experiments and safely roll back problematic features with human approval.
@@ -49,7 +56,14 @@ flowchart TD
 
 ## Application Screenshots
 
-### Overview Dashboard
+#
+## Demo Video
+
+[![Watch FlagGuard AI Demo](https://img.youtube.com/vi/cBjoJ1PRgmk/hqdefault.jpg)](https://youtu.be/cBjoJ1PRgmk)
+
+[Watch the complete FlagGuard AI demonstration on YouTube](https://youtu.be/cBjoJ1PRgmk)
+
+## Overview Dashboard
 ![Dashboard](docs/screenshots/01-overview.png)
 
 ### Feature Flag Management
@@ -307,6 +321,7 @@ Original FlagGuard AI code is licensed under the MIT License. Third-party compon
 ---
 
 **FlagGuard AI - Experiment intelligently. Release safely.**
+
 
 
 
