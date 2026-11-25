@@ -95,20 +95,21 @@ The release safety and experimentation modes use separate feature flags.
 
 ## Project Structure
 
-```text
+~~~text
 FlagGuardAI/
-â”œâ”€â”€ backend/
-â”œâ”€â”€ frontend/
-â”œâ”€â”€ demostore/
-â”œâ”€â”€ experiments/
-â”œâ”€â”€ infrastructure/
-â”‚   â””â”€â”€ flagsmith/
-â”œâ”€â”€ tests/
-â”œâ”€â”€ docker-compose.yml
-â”œâ”€â”€ start.ps1
-â”œâ”€â”€ stop.ps1
-â””â”€â”€ README.md
-```
+|-- backend/
+|-- frontend/
+|-- demostore/
+|-- experiments/
+|-- infrastructure/
+|   |-- flagsmith/
+|-- tests/
+|-- docker-compose.yml
+|-- start.ps1
+|-- stop.ps1
+|-- README.md
+|-- LICENSE
+~~~
 
 ## Prerequisites
 
@@ -273,4 +274,5 @@ Original FlagGuard AI code is licensed under the MIT License. Third-party compon
 ---
 
 **FlagGuard AI - Experiment intelligently. Release safely.**
+
 
